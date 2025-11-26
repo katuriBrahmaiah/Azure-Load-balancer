@@ -18,7 +18,7 @@ The Load Balancer distributes incoming web traffic (port 80) across all three VM
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 Client → Public IP → Azure Load Balancer (lb)
 │
@@ -30,7 +30,7 @@ Client → Public IP → Azure Load Balancer (lb)
 
 ---
 
-# ✅ Step-by-Step Configuration
+# Step-by-Step Configuration
 
 ## 1️⃣ Create the Virtual Machines
 - Create **3 or more VMs**
@@ -132,7 +132,7 @@ This rule forwards web traffic to VMs.
 
 ---
 
-# 🔒 HTTPS (Port 443) Note — Important
+# HTTPS (Port 443) Note — Important
 If you want the LB to serve **HTTPS traffic**, you must install a valid **SSL certificate**.
 
 Even if:
@@ -144,7 +144,7 @@ I personally tested this — HTTPS did not work unless certificate was installed
 
 ---
 
-# 🧪 Testing the Load Balancer
+# Testing the Load Balancer
 
 1. Copy the **Public IP** of the LB  
 2. Open browser → paste the IP  
